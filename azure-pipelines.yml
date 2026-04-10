@@ -1,0 +1,18 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo "Starting ServiceNow CI/CD Pipeline"
+  displayName: 'Start'
+
+- script: echo "Simulating Build Step"
+  displayName: 'Build'
+
+- script: echo "Simulating Test Step"
+  displayName: 'Test'
+
+- script: echo "Simulating Deployment to TEST"
+  displayName: 'Deploy'
